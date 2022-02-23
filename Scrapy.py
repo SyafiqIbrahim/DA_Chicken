@@ -3,8 +3,14 @@
 ############################
 import scrapy
 
+############################
+#Class Extract
+############################
 class Extract(scrapy.Spider):
+    #Name for scrapy
     name = 'Spider'
+
+    #Website input
     start_urls = ['http://192.168.182.143/spicyx']
 
     def parse(self, response):
